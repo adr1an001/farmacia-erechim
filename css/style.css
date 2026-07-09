@@ -1,0 +1,263 @@
+/* ==========================
+   CONFIGURAÇÕES GERAIS
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manufacturing Consent", system-ui;
+}
+
+body {
+    background: linear-gradient(
+        to bottom,
+        #5d6062,
+        #6b6e70,
+        #787b7d
+    );
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+}
+
+.cabecalho-imagem {
+    height: 70px;
+    border-radius: 50px;
+    border: 2px solid #000;
+    box-shadow: 0 2px 6px rgba(0,0,0,.3);
+    transition: transform .3s;
+}
+
+.cabecalho-imagem:hover {
+    transform: scale(1.05);
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    font-size: 20px;
+    color: #020202;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.cabecalho-menu-item:hover {
+    color: #2b2b2b;
+    text-decoration: underline;
+}
+
+/* ==========================
+   MAIN
+========================== */
+
+.conteudo {
+    border-top: .4px solid #020202;
+    margin-bottom: 48px;
+}
+
+.conteudo-principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 80px;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Righteous', cursive;
+    font-size: 64px;
+    color: #020202;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-size: 24px;
+    color: #020202;
+}
+
+/* ==========================
+   BOTÃO
+========================== */
+
+.conteudo-principal-botao {
+    width: 180px;
+    height: 60px;
+
+    background-color: #17DD38;
+    color: white;
+
+    border: none;
+    border-radius: 20px;
+
+    font-family: 'Sarala', sans-serif;
+    font-size: 24px;
+
+    cursor: pointer;
+
+    box-shadow: 4px 5px 4px rgba(0,0,0,.25);
+
+    transition: background-color .3s, transform .2s;
+}
+
+.conteudo-principal-botao:hover {
+    background-color: #14C933;
+    transform: scale(1.05);
+}
+
+.conteudo-principal-botao:active {
+    background-color: #10B92D;
+}
+
+/* ==========================
+   IMAGEM PRINCIPAL
+========================== */
+
+.conteudo-principal-imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-principal-imagens img {
+
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+
+    padding: 15px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.25);
+
+    transition: transform .3s;
+
+    cursor: pointer;
+}
+
+.conteudo-principal-imagens img:hover {
+    transform: scale(1.05);
+}
+
+/* ==========================
+   CONTEÚDO SECUNDÁRIO
+========================== */
+
+.conteudo-secundario {
+    margin-top: 40px;
+    text-align: center;
+
+    font-family: 'Sarala', sans-serif;
+    color: #020202;
+}
+
+.conteudo-secundario-titulo {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-size: 22px;
+    margin: 12px 0;
+}
+
+/* ==========================
+   RODAPÉ
+========================== */
+
+.rodape {
+
+    margin-top: 50px;
+
+    padding: 40px;
+
+    border-top: 2px solid #1b1b1b;
+
+    background-color: rgba(0,0,0,.15);
+
+    text-align: center;
+}
+
+.rodape-imagem {
+
+    width: 350px;
+
+    max-width: 90%;
+
+    height: auto;
+
+    border-radius: 16px;
+}
+
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+
+@media (max-width: 900px){
+
+    .cabecalho{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .conteudo-principal{
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 40px 25px;
+    }
+
+    .conteudo-principal-escrito{
+
+        align-items: center;
+    }
+
+    .conteudo-principal-escrito-titulo{
+
+        font-size: 46px;
+    }
+
+    .conteudo-principal-escrito-subtitulo{
+
+        font-size: 20px;
+    }
+
+    .conteudo-principal-imagens img{
+
+        max-width: 320px;
+    }
+}
