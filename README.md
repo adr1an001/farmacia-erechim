@@ -20,10 +20,6 @@ Projeto de uma landing page moderna desenvolvida para uma farmácia, com foco em
 
 Criar uma presença digital simples e profissional para uma farmácia que possui pouca presença online, demonstrando conhecimentos em desenvolvimento front-end.
 
-## 📷 Preview
-
-(Adicionar imagem ou GIF do projeto)
-
 ## 👨‍💻 Desenvolvido por
 
 Adrian Wanderbruch
